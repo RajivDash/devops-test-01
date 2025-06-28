@@ -1,8 +1,10 @@
 name: first workflow 
 on: push
 jobs:
-  job-name:
+  Hotel-Management:
     runs-on: ubuntu-latest
     steps:
-     - name: greeting this is the first entry page
-       run: echo "welcome to first entry of experiencing GitHub Actions"
+     - name: room
+       run: echo "This Room Feature need to be developed"
+     - name: user
+       run: echo "This featre should taken as first priority"
