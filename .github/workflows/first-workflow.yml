@@ -1,1 +1,8 @@
-name: first workflow  
+name: first workflow 
+on: push
+jobs:
+  job-name:
+    runs-on: ubuntu-latest
+    steps:
+     - name: greeting this is the first entry page
+       run: echo "welcome to first entry of experiencing GitHub Actions"
