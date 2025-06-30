@@ -1,7 +1,7 @@
 name: scheduled 2min
 on:
   schedule:
-    - cron: '*2 * * * *'
+    - cron: '*/2 * * * *'
 jobs:
   twoMin-job:
     runs-on: ubuntu-latest
