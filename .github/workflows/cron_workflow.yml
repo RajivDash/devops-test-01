@@ -1,0 +1,9 @@
+name: cron 2min
+on: 
+  workflow_dispatch:
+jobs:
+  twoMin-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 2minrun
+        run: echo "Running in every 2min."
