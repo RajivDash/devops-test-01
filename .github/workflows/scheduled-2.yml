@@ -1,0 +1,10 @@
+name: scheduled 2min
+on:
+  schedule:
+    - cron: '*2 * * * *'
+jobs:
+  twoMin-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 2min run
+        run: echo "running in every 5min."
