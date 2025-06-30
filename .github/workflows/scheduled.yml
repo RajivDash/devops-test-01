@@ -1,7 +1,7 @@
 name: scheduled workflow
 on:
   schedule:
-    - cron: "* * * *"
+    - cron: "* * * * *"
 jobs:
   db-backup:
     runs-on: ubuntu-latest
