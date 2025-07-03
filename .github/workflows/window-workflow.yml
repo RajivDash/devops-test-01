@@ -1,4 +1,4 @@
-name: first workflow 
+name: windows workflow 
 on: workflow_dispatch
 jobs:
   Hotel-Management:
