@@ -13,4 +13,4 @@ jobs:
       - name: list images
         run: docker image ls
       - name: push image to docker hub
-        run: docker push ${{vars.DOCER_USERNAME}}/nginx:latest
+        run: docker push ${{vars.DOCKER_USERNAME}}/nginx:latest
