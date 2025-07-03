@@ -1,0 +1,16 @@
+name: docker hub login
+on: workflow_dispatch
+jobs:
+  docker-login:
+    runs-on: ubuntu-latest
+    steps:
+      - name: login to dockerhub
+        run: echo "${{secrets.DOCKER_PASSWORD}}" | docker login -u ${{vars.DOCKER_USERNAME}} --password-stdin
+      - name: pull exisitng image
+        run: docker pull nginx:latest
+      - name: rename the image
+        run: docker image tag nginx:latest ${{vars.DOCKER_USERNAME}}/nginx:latest
+      - name: list images
+        run: docker image ls
+      - name: push image to docker hub
+        run: docker push ${{vars.DOCER_USERNAME}}/nginx:latest
