@@ -2,7 +2,7 @@ name: first workflow
 on: push
 jobs:
   Hotel-Management:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
      - name: room
        run: echo "This Room Feature need to be developed"
